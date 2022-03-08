@@ -146,16 +146,16 @@ var getContext = function(display, infos) {
                categories: {
                   logic: 100,
                   loops: 180,
-                  math: 230,
-                  texts: 60,
-                  lists: 40,
-                  colour: 20,
+                  math: 220,
+                  texts: 250,
+                  lists: 60,
+                  colour: 310,
                   variables: 330,
                   functions: 290,
-                  read: 260,
-                  print: 200,
+                  read: 10,
+                  print: 60,
                   manipulate: 0,
-                  _default: 0
+                  _default: 280
                },
                blocks: {}
             };
