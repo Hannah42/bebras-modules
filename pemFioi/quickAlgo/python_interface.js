@@ -994,7 +994,7 @@ function LogicController(maxInstructions, subTask) {
 
       hideHiddenWords(list);
 
-      var bracketsWords = { list_brackets: 'crochets [ ]+[]', dict_brackets: 'accolades { }+{}', var_assign: 'variables+x =' };
+      var bracketsWords = { list_brackets: window.languageStrings.braketSquare + ' [ ]+[]', dict_brackets: window.languageStrings.braketCurvy + ' { }+{}', var_assign: 'variables+x =' };
       for(var bracketsCode in bracketsWords) {
         var bracketsIdx = list.indexOf(bracketsCode);
         if(bracketsIdx >= 0) {

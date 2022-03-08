@@ -148,7 +148,9 @@ var quickAlgoLanguageStrings = {
       readDocumentation: "Vous êtes autorisé(e) à lire de la documentation sur Python et à utiliser un moteur de recherche pendant le concours.",
       autorizedKeyWords: "Mots-clés autorisés : ",
       constant: "constante",
-      variable: "variable"
+      variable: "variable",
+      braketSquare: "crochets", // TODO :: verify
+      braketCurvy: "accolades" // TODO :: verify
    },
    en: {
       categories: {
@@ -292,7 +294,9 @@ var quickAlgoLanguageStrings = {
       readDocumentation: "Vous êtes autorisé(e) à lire de la documentation sur Python et à utiliser un moteur de recherche pendant le concours.", // TODO :: translate
       autorizedKeyWords: "Mots-clés autorisés : ", // TODO :: translate,
       constant: "constant", // TODO :: verify
-      variable: "variable"
+      variable: "variable",
+      braketSquare: "square brackets", // TODO :: verify
+      braketCurvy: "curly brackets" // TODO :: verify
    },
    de: {
       categories: {
@@ -425,7 +429,7 @@ var quickAlgoLanguageStrings = {
       infiniteLoop: "Endlosschleife", 
       availableFunctions: "Verfügbare Funktionen:",
       availableFunctionsVerbose: "Die verfügbaren Funktionen zum Steuern des Roboters sind:",
-      startingLine: "Dein Programm muss mit folgender Zeile beginnen:",
+      startingLine: "Dein Programm muss mit folgender Zeile beginnen",
       startingLines: "Dein Programm muss mit folgenden Zeilen beginnen",
       keyword: "Schlüsselwort",
       keywordAllowed: "Erlaubtes Schlüsselwort:",
@@ -433,11 +437,13 @@ var quickAlgoLanguageStrings = {
       keywordsAllowed: "Erlaubte Schlüsselwörter:",
       keywordsForbidden: "Nicht erlaubte Schlüsselwörter:",
       variablesAllowed: "Du darfst Variable verwenden.",
-      variablesForbidden: "Du darfst keine Variablen verwenden",
+      variablesForbidden: "Du darfst keine Variablen verwenden.",
       readDocumentation: "Du darfst die Python-Dokumentation lesen.",
       autorizedKeyWords: "Erlaubte Schlüsselwörter:",
       constant: "Konstante",
-      variable: "Variable"
+      variable: "Variable",
+      braketSquare: "Eckige Klammern",
+      braketCurvy: "Geschwungene Klammern"
    },
    es: {
       categories: {
@@ -583,7 +589,9 @@ var quickAlgoLanguageStrings = {
       readDocumentation: "Se le permite leer la documentación de Python y utilizar un motor de búsqueda durante el concurso.",
       autorizedKeyWords: "Palabras clave autorizadas: ",
       constant: "constante", // TODO :: verify
-      variable: "variable" // TODO :: verify
+      variable: "variable", // TODO :: verify
+      braketSquare: "corchetes", // TODO :: verify
+      braketCurvy: "llaves" // TODO :: verify
    },
    sl: {
       categories: {
@@ -727,7 +735,9 @@ var quickAlgoLanguageStrings = {
       readDocumentation: "Vous êtes autorisé(e) à lire de la documentation sur Python et à utiliser un moteur de recherche pendant le concours.", // TODO :: translate
       autorizedKeyWords: "Mots-clés autorisés : ", // TODO :: translate,
       constant: "konstanten", // TODO :: verify
-      variable: "spremenljivka" // TODO :: verify
+      variable: "spremenljivka", // TODO :: verify
+      braketSquare: "oglati oklepaji", // TODO :: verify
+      braketCurvy: "kodrasti oklepaji" // TODO :: verify
    },
    it: {
       categories: {
@@ -873,7 +883,9 @@ var quickAlgoLanguageStrings = {
       readDocumentation: "Sei autorizzato(a) a leggere la documentazione su Python e a utilizzare un motore di ricerca durante il concorso.",
       autorizedKeyWords: "Parole-chiave autorizzate: ",
       constant: "costante", // TODO :: verify
-      variable: "variabile" // TODO :: verify
+      variable: "variabile", // TODO :: verify
+      braketSquare: "parentesi quadre", // TODO :: verify
+      braketCurvy: "parentesi graffe" // TODO :: verify
    }
 };
 

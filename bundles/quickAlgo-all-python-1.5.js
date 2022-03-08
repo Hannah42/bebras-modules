@@ -216,14 +216,14 @@ function pythonForbidden(code, includeBlocks) {
          var re = /[\[\]]/;
          if(re.exec(code)) {
             // Forbidden keyword found
-            return 'crochets [ ]'; // TODO :: i18n ?
+            return window.languageStrings.braketSquare + ' [ ]';
          }
       } else if(forbidden[i] == 'dict_brackets') {
          // Special pattern for lists
          var re = /[\{\}]/;
          if(re.exec(code)) {
             // Forbidden keyword found
-            return 'accolades { }'; // TODO :: i18n ?
+            return window.languageStrings.braketCurvy + ' { }';
          }
       } else if(forbidden[i] == 'var_assign') {
          // Special pattern for lists
@@ -308,9 +308,9 @@ function pythonFindLimited(code, limitedUses, blockToCode) {
          if(usesCount[pointer] > limitedUses[pointer].nbUses) {
             // TODO :: i18n ?
             if(pyKey == 'list_brackets') {
-               var name = 'crochets [ ]';
+               var name = window.languageStrings.braketSquare + ' [ ]';
             } else if(pyKey == 'dict_brackets') {
-               var name = 'accolades { }';
+               var name = window.languageStrings.braketCurvy + ' { }';
             } else if(pyKey == 'math_number') {
                var name = 'nombres';
             } else {
@@ -3550,7 +3550,7 @@ function LogicController(nbTestCases, maxInstructions) {
         }
       }
 
-      var bracketsWords = { list_brackets: 'crochets [ ]+[]', dict_brackets: 'accolades { }+{}', var_assign: 'variables+x =' };
+      var bracketsWords = { list_brackets: window.languageStrings.braketSquare + ' [ ]+[]', dict_brackets: window.languageStrings.braketCurvy + ' { }+{}', var_assign: 'variables+x =' };
       for(var bracketsCode in bracketsWords) {
         var bracketsIdx = list.indexOf(bracketsCode);
         if(bracketsIdx >= 0) {
