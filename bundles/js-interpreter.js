@@ -4433,7 +4433,7 @@ Interpreter.prototype.setValueToScope = function(name, value) {
   if (scope === this.global && (!strict || this.hasProperty(scope, name))) {
     return this.setProperty(scope, name, value);
   }
-  this.throwException(this.REFERENCE_ERROR, name + ' is not defined');
+  this.throwException(this.REFERENCE_ERROR, name + ' ist nicht definiert.');
 };
 
 /**
