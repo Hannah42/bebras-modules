@@ -526,7 +526,7 @@ var getContext = function(display, infos, curLevel) {
                left: "drehe nach links",
                right: "drehe nach rechts",
                turnAround: "drehe um",
-               forward: "gehe",
+               forward: "gehe vorwärts",
                backwards: "gehe rückwärts",
                jump: "springe",
                obstacleInFront: "vor Hindernis",
