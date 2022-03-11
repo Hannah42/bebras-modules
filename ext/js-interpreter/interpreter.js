@@ -1893,7 +1893,7 @@ Interpreter.prototype.getProperty = function(obj, name) {
   name = String(name);
   if (obj === undefined || obj === null) {
     this.throwException(this.TYPE_ERROR,
-                        "Cannot read property '" + name + "' of " + obj);
+                          "Kann Eigenschaft von '" + name + "' aus " + obj + " nicht lesen.");
   }
   if (name === 'length') {
     // Special cases for magic length property.

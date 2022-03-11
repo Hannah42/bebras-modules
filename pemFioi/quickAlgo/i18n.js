@@ -399,7 +399,7 @@ var quickAlgoLanguageStrings = {
       limitedBlock: "Du verwendest zu viele Bausteine einer eingeschränkten Sorte:",
       limitedBlocks: "Du verwendest zu viele Bausteine einer eingeschränkten Sorte:",
       uninitializedVar: "Nicht initialisierte Variable:",
-      undefinedMsg: "This can be because of an access to an index out of a list, or an undefined variable.",
+      undefinedMsg: "Dies kann durch einen Zugriff auf einen Index außerhalb einer Liste oder eine undefinierte Variable verursacht werden.",
       valueTrue: 'wahr',
       valueFalse: 'unwahr',
       evaluatingAnswer: 'Wird ausgewertet',
