@@ -83,8 +83,8 @@ var getContext = function(display, infos) {
          },
          startingBlockName: "Programm",
          messages: {
-            inputPrompt: "Please input a line for the program.", // TODO :: translate two lines
-            inputEmpty: "Your program tried to read the input while there is no line left to read!",
+            inputPrompt: "Bitte gebe eine Zeile ein: ", // TODO :: translate two lines
+            inputEmpty: "Das Programm hat versucht die Eingabe zu lesen, aber nichts gefunden.",
             outputWrong: "Das Programm hat nicht alle Zeilen richtig ausgegeben.",
             outputCorrect: "Bravo! Das Programm hat alle Zeilen richtig ausgegeben.",
             tooFewChars: "Zeile zu kurz: Zeile {0}",
