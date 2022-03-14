@@ -328,7 +328,7 @@ Interpreter.prototype.initFunction = function(scope) {
       var name = String(arguments[i]);
       if (!name.match(identifierRegexp)) {
         thisInterpreter.throwException(thisInterpreter.SYNTAX_ERROR,
-            'Invalid function argument: ' + name);
+            'Ungültiger Funktions Parameter: ' + name);
       }
       args.push(name);
     }
@@ -1893,7 +1893,7 @@ Interpreter.prototype.getProperty = function(obj, name) {
   name = String(name);
   if (obj === undefined || obj === null) {
     this.throwException(this.TYPE_ERROR,
-                          "Kann Eigenschaft von '" + name + "' aus " + obj + " nicht lesen.");
+                          "Kann Eigenschaft nicht lesen von '" + name + "' aus " + obj);
   }
   if (name === 'length') {
     // Special cases for magic length property.
@@ -1967,7 +1967,7 @@ Interpreter.prototype.setProperty = function(obj, name, value, opt_descriptor) {
   name = String(name);
   if (obj === undefined || obj === null) {
     this.throwException(this.TYPE_ERROR,
-                        "Cannot set property '" + name + "' of " + obj);
+                        "Kann Eigenschaft nicht setzen von '" + name + "' aus " + obj);
   }
   if (opt_descriptor && ('get' in opt_descriptor || 'set' in opt_descriptor) &&
       ('value' in opt_descriptor || 'writable' in opt_descriptor)) {
@@ -2203,7 +2203,7 @@ Interpreter.prototype.getValueFromScope = function(name) {
       prevNode['operator'] === 'typeof') {
     return undefined;
   }
-  this.throwException(this.REFERENCE_ERROR, name + '  ist nicht definiert.');
+  this.throwException(this.REFERENCE_ERROR, name + '  ist nicht definiert');
 };
 
 /**
@@ -2228,7 +2228,7 @@ Interpreter.prototype.setValueToScope = function(name, value) {
   if (scope === this.global && (!strict || this.hasProperty(scope, name))) {
     return this.setProperty(scope, name, value);
   }
-  this.throwException(this.REFERENCE_ERROR, name + ' is not defined');
+  this.throwException(this.REFERENCE_ERROR, name + ' ist nicht definiert');
 };
 
 /**
@@ -2698,7 +2698,7 @@ Interpreter.prototype['stepCallExpression'] = function(stack, state, node) {
   if (!state.doneExec_) {
     state.doneExec_ = true;
     if (!func || !func.isObject) {
-      this.throwException(this.TYPE_ERROR, func + ' is not a function');
+      this.throwException(this.TYPE_ERROR, func + ' ist keine Funktion');
     }
     var funcNode = func.node;
     if (funcNode) {
@@ -2773,7 +2773,7 @@ Interpreter.prototype['stepCallExpression'] = function(stack, state, node) {
       var f = new F();
       f();
       */
-      this.throwException(this.TYPE_ERROR, func.class + ' is not a function');
+      this.throwException(this.TYPE_ERROR, func.class + ' ist keine Funktion');
     }
   } else {
     // Execution complete.  Put the return value on the stack.
