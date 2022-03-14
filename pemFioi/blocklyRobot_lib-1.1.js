@@ -1690,7 +1690,7 @@ var getContext = function(display, infos, curLevel) {
          },
          de: {
             label: {
-              dropObject: "bemale Feld",
+              dropObject: "färbe das Feld",
               onContainer: "auf Markierung",
               readNumber: "lese Zahl auf dem Feld",
             },

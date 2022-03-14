@@ -190,7 +190,7 @@ var getContext = function(display, infos, curLevel) {
             south: "gehe nach unten",
             west: "gehe nach links",
             north: "gehe nach oben",
-            paint: "bemale das Feld",
+            paint: "färbe das Feld",
             pickTransportable: "Murmel aufheben",
             dropTransportable: "Murmel ablegen",
             onTransportable: "auf einer Murmel",
